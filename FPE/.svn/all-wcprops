@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/sysadmin/!svn/ver/3078/utils/chamgt01/FPE
+END
+PFESettingsUpdate.ps1
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/sysadmin/!svn/ver/3078/utils/chamgt01/FPE/PFESettingsUpdate.ps1
+END
+Export.ps1
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/sysadmin/!svn/ver/3078/utils/chamgt01/FPE/Export.ps1
+END
+Import.ps1
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/sysadmin/!svn/ver/3078/utils/chamgt01/FPE/Import.ps1
+END

@@ -1,0 +1,1599 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FSESettings VersionMajor="11" VersionMinor="0" VersionBuild="677" ServerName="CHAXCH05" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/ForefrontServer/2008/02/Configuration">
+  <ExchangeAntiSpamPS>
+    <ConnectionFiltering>
+      <IPAllowListConfig>
+        <Enabled>false</Enabled>
+      </IPAllowListConfig>
+      <IPAllowListEntries />
+      <IPBlockListConfig>
+        <Enabled>true</Enabled>
+      </IPBlockListConfig>
+      <IPBlockListEntries />
+    </ConnectionFiltering>
+    <RecipientFiltering>
+      <Enabled>true</Enabled>
+      <BlockListEnabled>true</BlockListEnabled>
+      <BlockedRecipients />
+      <RecipientValidationEnabled>true</RecipientValidationEnabled>
+    </RecipientFiltering>
+    <SenderFiltering>
+      <Enabled>true</Enabled>
+      <Action>Reject</Action>
+      <BlankSenderBlockingEnabled>true</BlankSenderBlockingEnabled>
+      <BlockedDomains />
+      <BlockedDomainsAndSubdomains>
+        <string>cqmxjd.com</string>
+        <string>cbg.ro</string>
+      </BlockedDomainsAndSubdomains>
+      <BlockedSenders>
+        <string>centigram@tomburton.com</string>
+      </BlockedSenders>
+    </SenderFiltering>
+    <SenderID>
+      <Enabled>true</Enabled>
+      <BypassedRecipients />
+      <BypassedSenderDomains />
+      <SpoofedDomainAction>StampStatus</SpoofedDomainAction>
+      <TempErrorAction>StampStatus</TempErrorAction>
+    </SenderID>
+  </ExchangeAntiSpamPS>
+  <FSSEHSPolicy>
+    <RejectSenderIP />
+    <AllowSenderIP />
+    <RejectSenderDomain />
+    <AllowSenderDomain />
+    <RejectSenderAddress />
+    <AllowSenderAddress />
+    <RejectRecipientAddress />
+    <AllowRecipientAddress />
+    <SuspectMailAction>
+      <Action>Quarantine</Action>
+      <XheaderText>X-SPAM</XheaderText>
+      <Direction>Inbound</Direction>
+    </SuspectMailAction>
+    <CompanyName i:nil="true" />
+    <EHSUsername i:nil="true" />
+    <EHSPassword i:nil="true" />
+    <EHSSyncOption i:nil="true" />
+    <ProxySettingsEnabled i:nil="true" />
+    <ProxyServer i:nil="true" />
+    <ProxyPort i:nil="true" />
+    <ProxyUsername i:nil="true" />
+    <ProxyPassword i:nil="true" />
+    <ProxyDomain i:nil="true" />
+  </FSSEHSPolicy>
+  <Fse>
+    <AdvancedOptions>
+      <FSEAdvancedOptions>
+        <AdditionalTypeChecking>0</AdditionalTypeChecking>
+        <ConvertExtensionType>txt</ConvertExtensionType>
+        <DeleteCorruptedCompressed>true</DeleteCorruptedCompressed>
+        <DeleteCorruptedUuencode>true</DeleteCorruptedUuencode>
+        <DeleteEncryptedCompressed>false</DeleteEncryptedCompressed>
+        <DeletePartialMessages>true</DeletePartialMessages>
+        <EnableFixBareCRLF>false</EnableFixBareCRLF>
+        <EnableInboundFileFiltering>true</EnableInboundFileFiltering>
+        <EnableOutboundFileFiltering>true</EnableOutboundFileFiltering>
+        <EnableReverseDNSLookup>true</EnableReverseDNSLookup>
+        <EnableSenderFilteringBySmtpAddress>true</EnableSenderFilteringBySmtpAddress>
+        <EngineErrorAction>DELETE</EngineErrorAction>
+        <HighCompressedZipCorrupted>true</HighCompressedZipCorrupted>
+        <HostedServiceOptedIn>false</HostedServiceOptedIn>
+        <HostedServiceRescanContentFilter>false</HostedServiceRescanContentFilter>
+        <HostedServiceRescanVirus>false</HostedServiceRescanVirus>
+        <InternalAddress></InternalAddress>
+        <MaxCompressedFileSize>20</MaxCompressedFileSize>
+        <MaxContainerFileInfections>5</MaxContainerFileInfections>
+        <MaxContainerFileSize>25</MaxContainerFileSize>
+        <MaxNestedDepthCompressedFiles>5</MaxNestedDepthCompressedFiles>
+        <MaxNestedObjects>30</MaxNestedObjects>
+        <MaxUnCompressedFileSize>100</MaxUnCompressedFileSize>
+        <MultipartRARCorrupted>true</MultipartRARCorrupted>
+        <QuarantineCorruptedCompressed>true</QuarantineCorruptedCompressed>
+        <QuarantineOnTimeout>true</QuarantineOnTimeout>
+        <SMTPExternalHosts></SMTPExternalHosts>
+        <ScanAllAttachments>true</ScanAllAttachments>
+        <UseDomainsDat>false</UseDomainsDat>
+      </FSEAdvancedOptions>
+    </AdvancedOptions>
+    <BackscatterFilter>
+      <FseBackscatterFilter>
+        <DisableDate>false</DisableDate>
+        <Enabled>false</Enabled>
+        <ExcludedDomains />
+        <NoDsnDomains />
+      </FseBackscatterFilter>
+    </BackscatterFilter>
+    <BackscatterKeys>
+      <FseBackscatterKeys>
+        <ActiveKeys />
+        <ExpiringKeys />
+        <KeyUpdateDate>1999-12-31T19:00:00-05:00</KeyUpdateDate>
+      </FseBackscatterKeys>
+    </BackscatterKeys>
+    <EngineManagement>
+      <FseEngineManagement>
+        <OnDemandEngines>
+          <ForefrontServerAbstractSettings>MICROSOFT</ForefrontServerAbstractSettings>
+          <ForefrontServerAbstractSettings>KASPERSKY</ForefrontServerAbstractSettings>
+          <ForefrontServerAbstractSettings>NORMAN</ForefrontServerAbstractSettings>
+          <ForefrontServerAbstractSettings>AUTHENTIUM</ForefrontServerAbstractSettings>
+          <ForefrontServerAbstractSettings>VIRUSBUSTER</ForefrontServerAbstractSettings>
+        </OnDemandEngines>
+        <OverrideAutomaticManagement>false</OverrideAutomaticManagement>
+        <RealtimeEngines>
+          <ForefrontServerAbstractSettings>MICROSOFT</ForefrontServerAbstractSettings>
+          <ForefrontServerAbstractSettings>KASPERSKY</ForefrontServerAbstractSettings>
+          <ForefrontServerAbstractSettings>NORMAN</ForefrontServerAbstractSettings>
+          <ForefrontServerAbstractSettings>AUTHENTIUM</ForefrontServerAbstractSettings>
+          <ForefrontServerAbstractSettings>VIRUSBUSTER</ForefrontServerAbstractSettings>
+        </RealtimeEngines>
+        <ScheduledEngines>
+          <ForefrontServerAbstractSettings>MICROSOFT</ForefrontServerAbstractSettings>
+          <ForefrontServerAbstractSettings>KASPERSKY</ForefrontServerAbstractSettings>
+          <ForefrontServerAbstractSettings>NORMAN</ForefrontServerAbstractSettings>
+          <ForefrontServerAbstractSettings>AUTHENTIUM</ForefrontServerAbstractSettings>
+          <ForefrontServerAbstractSettings>VIRUSBUSTER</ForefrontServerAbstractSettings>
+        </ScheduledEngines>
+        <TransportEngines>
+          <ForefrontServerAbstractSettings>MICROSOFT</ForefrontServerAbstractSettings>
+          <ForefrontServerAbstractSettings>KASPERSKY</ForefrontServerAbstractSettings>
+          <ForefrontServerAbstractSettings>NORMAN</ForefrontServerAbstractSettings>
+          <ForefrontServerAbstractSettings>AUTHENTIUM</ForefrontServerAbstractSettings>
+          <ForefrontServerAbstractSettings>VIRUSBUSTER</ForefrontServerAbstractSettings>
+        </TransportEngines>
+      </FseEngineManagement>
+    </EngineManagement>
+    <FSENotification>
+      <FSENotifications>
+        <Bcc></Bcc>
+        <Body>%Product% has detected a virus.
+    
+    Virus name:  "%Malware%"
+    File name:  "%File%"
+    State:  "%State%"
+    Subject line:  "%Message%"
+    Sender:  "%ISName%%ESName%"
+    Scan job:  "%ScanJob%"
+    Location:  "%Company%/%Site%/%Server% (%Folder%)"</Body>
+        <Cc></Cc>
+        <Enabled>true</Enabled>
+        <Event>
+          <ForefrontServerAbstractSettings>Virus</ForefrontServerAbstractSettings>
+        </Event>
+        <Role>Administrator</Role>
+        <Subject>%Product% detected a virus</Subject>
+        <To>Exchange-Reports@arin.net</To>
+      </FSENotifications>
+      <FSENotifications>
+        <Bcc></Bcc>
+        <Body>%Product% has detected a virus.
+    
+    Virus name:  "%Malware%"
+    File name:  "%File%"
+    State:  "%State%"
+    Subject line:  "%Message%"
+    Sender:  "%ISName%%ESName%"
+    Scan job:  "%ScanJob%"
+    Location:  "%Company%/%Site%/%Server% (%Folder%)"</Body>
+        <Cc></Cc>
+        <Enabled>false</Enabled>
+        <Event>
+          <ForefrontServerAbstractSettings>Virus</ForefrontServerAbstractSettings>
+        </Event>
+        <Role>InternalSender</Role>
+        <Subject>%Product% detected a virus</Subject>
+        <To>%ISAddress%</To>
+      </FSENotifications>
+      <FSENotifications>
+        <Bcc></Bcc>
+        <Body>%Product% has detected a virus.
+    
+    Virus name:  "%Malware%"
+    File name:  "%File%"
+    State:  "%State%"
+    Subject line:  "%Message%"
+    Sender:  "%ISName%%ESName%"
+    Scan job:  "%ScanJob%"
+    Location:  "%Company%/%Site%/%Server% (%Folder%)"</Body>
+        <Cc></Cc>
+        <Enabled>false</Enabled>
+        <Event>
+          <ForefrontServerAbstractSettings>Virus</ForefrontServerAbstractSettings>
+        </Event>
+        <Role>InternalRecipient</Role>
+        <Subject>%Product% detected a virus</Subject>
+        <To>%IRAddresses%</To>
+      </FSENotifications>
+      <FSENotifications>
+        <Bcc></Bcc>
+        <Body>%Product% has detected a virus.
+    
+    Virus name:  "%Malware%"
+    File name:  "%File%"
+    State:  "%State%"
+    Subject line:  "%Message%"
+    Sender:  "%ISName%%ESName%"
+    Scan job:  "%ScanJob%"
+    Location:  "%Company%/%Site%/%Server% (%Folder%)"</Body>
+        <Cc></Cc>
+        <Enabled>false</Enabled>
+        <Event>
+          <ForefrontServerAbstractSettings>Virus</ForefrontServerAbstractSettings>
+        </Event>
+        <Role>ExternalSender</Role>
+        <Subject>%Product% detected a virus</Subject>
+        <To>%ERAddresses%</To>
+      </FSENotifications>
+      <FSENotifications>
+        <Bcc></Bcc>
+        <Body>%Product% has detected a virus.
+    
+    Virus name:  "%Malware%"
+    File name:  "%File%"
+    State:  "%State%"
+    Subject line:  "%Message%"
+    Sender:  "%ISName%%ESName%"
+    Scan job:  "%ScanJob%"
+    Location:  "%Company%/%Site%/%Server% (%Folder%)"</Body>
+        <Cc></Cc>
+        <Enabled>false</Enabled>
+        <Event>
+          <ForefrontServerAbstractSettings>Virus</ForefrontServerAbstractSettings>
+        </Event>
+        <Role>ExternalRecipient</Role>
+        <Subject>%Product% detected a virus</Subject>
+        <To>%ERAddresses%</To>
+      </FSENotifications>
+      <FSENotifications>
+        <Bcc></Bcc>
+        <Body>%Product% has detected spyware.
+
+      Spyware name:  "%Malware%"
+      File name:  "%File%"
+      State:  "%State%"
+      Subject line:  "%Message%"
+      Sender:  "%ISName%%ESName%"
+      Scan job:  "%ScanJob%"
+      Location:  "%Company%/%Site%/%Server% (%Folder%)"</Body>
+        <Cc></Cc>
+        <Enabled>true</Enabled>
+        <Event>
+          <ForefrontServerAbstractSettings>Spyware</ForefrontServerAbstractSettings>
+        </Event>
+        <Role>Administrator</Role>
+        <Subject>%Product% detected spyware</Subject>
+        <To>Exchange-Reports@arin.net</To>
+      </FSENotifications>
+      <FSENotifications>
+        <Bcc></Bcc>
+        <Body>%Product% has detected spyware.
+
+      Spyware name:  "%Malware%"
+      File name:  "%File%"
+      State:  "%State%"
+      Subject line:  "%Message%"
+      Sender:  "%ISName%%ESName%"
+      Scan job:  "%ScanJob%"
+      Location:  "%Company%/%Site%/%Server% (%Folder%)"</Body>
+        <Cc></Cc>
+        <Enabled>false</Enabled>
+        <Event>
+          <ForefrontServerAbstractSettings>Spyware</ForefrontServerAbstractSettings>
+        </Event>
+        <Role>InternalSender</Role>
+        <Subject>%Product% detected spyware</Subject>
+        <To>%ISAddress%</To>
+      </FSENotifications>
+      <FSENotifications>
+        <Bcc></Bcc>
+        <Body>%Product% has detected spyware.
+
+      Spyware name:  "%Malware%"
+      File name:  "%File%"
+      State:  "%State%"
+      Subject line:  "%Message%"
+      Sender:  "%ISName%%ESName%"
+      Scan job:  "%ScanJob%"
+      Location:  "%Company%/%Site%/%Server% (%Folder%)"</Body>
+        <Cc></Cc>
+        <Enabled>false</Enabled>
+        <Event>
+          <ForefrontServerAbstractSettings>Spyware</ForefrontServerAbstractSettings>
+        </Event>
+        <Role>InternalRecipient</Role>
+        <Subject>%Product% detected spyware</Subject>
+        <To>%IRAddresses%</To>
+      </FSENotifications>
+      <FSENotifications>
+        <Bcc></Bcc>
+        <Body>%Product% has detected spyware.
+
+      Spyware name:  "%Malware%"
+      File name:  "%File%"
+      State:  "%State%"
+      Subject line:  "%Message%"
+      Sender:  "%ISName%%ESName%"
+      Scan job:  "%ScanJob%"
+      Location:  "%Company%/%Site%/%Server% (%Folder%)"</Body>
+        <Cc></Cc>
+        <Enabled>false</Enabled>
+        <Event>
+          <ForefrontServerAbstractSettings>Spyware</ForefrontServerAbstractSettings>
+        </Event>
+        <Role>ExternalSender</Role>
+        <Subject>%Product% detected spyware</Subject>
+        <To>%ERAddresses%</To>
+      </FSENotifications>
+      <FSENotifications>
+        <Bcc></Bcc>
+        <Body>%Product% has detected spyware.
+
+      Spyware name:  "%Malware%"
+      File name:  "%File%"
+      State:  "%State%"
+      Subject line:  "%Message%"
+      Sender:  "%ISName%%ESName%"
+      Scan job:  "%ScanJob%"
+      Location:  "%Company%/%Site%/%Server% (%Folder%)"</Body>
+        <Cc></Cc>
+        <Enabled>false</Enabled>
+        <Event>
+          <ForefrontServerAbstractSettings>Spyware</ForefrontServerAbstractSettings>
+        </Event>
+        <Role>ExternalRecipient</Role>
+        <Subject>%Product% detected spyware</Subject>
+        <To>%ERAddresses%</To>
+      </FSENotifications>
+      <FSENotifications>
+        <Bcc></Bcc>
+        <Body>%Product% has detected a file filter match.
+
+      Filter name:  "%Filter%"
+      File name:  "%File%"
+      State:  "%State%"
+      Subject line:  "%Message%"
+      Sender:  "%ISName%%ESName%"
+      Scan job:  "%ScanJob%"
+      Location:  "%Company%/%Site%/%Server% (%Folder%)"</Body>
+        <Cc></Cc>
+        <Enabled>true</Enabled>
+        <Event>
+          <ForefrontServerAbstractSettings>FileFilter</ForefrontServerAbstractSettings>
+        </Event>
+        <Role>Administrator</Role>
+        <Subject>%Product% detected a file filter match</Subject>
+        <To>Exchange-Reports@arin.net</To>
+      </FSENotifications>
+      <FSENotifications>
+        <Bcc></Bcc>
+        <Body>%Product% has detected a file filter match.
+
+      Filter name:  "%Filter%"
+      File name:  "%File%"
+      State:  "%State%"
+      Subject line:  "%Message%"
+      Sender:  "%ISName%%ESName%"
+      Scan job:  "%ScanJob%"
+      Location:  "%Company%/%Site%/%Server% (%Folder%)"</Body>
+        <Cc></Cc>
+        <Enabled>false</Enabled>
+        <Event>
+          <ForefrontServerAbstractSettings>FileFilter</ForefrontServerAbstractSettings>
+        </Event>
+        <Role>InternalSender</Role>
+        <Subject>%Product% detected a file filter match</Subject>
+        <To>%ISAddress%</To>
+      </FSENotifications>
+      <FSENotifications>
+        <Bcc></Bcc>
+        <Body>%Product% has detected a file filter match.
+
+      Filter name:  "%Filter%"
+      File name:  "%File%"
+      State:  "%State%"
+      Subject line:  "%Message%"
+      Sender:  "%ISName%%ESName%"
+      Scan job:  "%ScanJob%"
+      Location:  "%Company%/%Site%/%Server% (%Folder%)"</Body>
+        <Cc></Cc>
+        <Enabled>false</Enabled>
+        <Event>
+          <ForefrontServerAbstractSettings>FileFilter</ForefrontServerAbstractSettings>
+        </Event>
+        <Role>InternalRecipient</Role>
+        <Subject>%Product% detected a file filter match</Subject>
+        <To>%IRAddresses%</To>
+      </FSENotifications>
+      <FSENotifications>
+        <Bcc></Bcc>
+        <Body>%Product% has detected a file filter match.
+
+      Filter name:  "%Filter%"
+      File name:  "%File%"
+      State:  "%State%"
+      Subject line:  "%Message%"
+      Sender:  "%ISName%%ESName%"
+      Scan job:  "%ScanJob%"
+      Location:  "%Company%/%Site%/%Server% (%Folder%)"</Body>
+        <Cc></Cc>
+        <Enabled>false</Enabled>
+        <Event>
+          <ForefrontServerAbstractSettings>FileFilter</ForefrontServerAbstractSettings>
+        </Event>
+        <Role>ExternalSender</Role>
+        <Subject>%Product% detected a file filter match</Subject>
+        <To>%ERAddresses%</To>
+      </FSENotifications>
+      <FSENotifications>
+        <Bcc></Bcc>
+        <Body>%Product% has detected a file filter match.
+
+      Filter name:  "%Filter%"
+      File name:  "%File%"
+      State:  "%State%"
+      Subject line:  "%Message%"
+      Sender:  "%ISName%%ESName%"
+      Scan job:  "%ScanJob%"
+      Location:  "%Company%/%Site%/%Server% (%Folder%)"</Body>
+        <Cc></Cc>
+        <Enabled>false</Enabled>
+        <Event>
+          <ForefrontServerAbstractSettings>FileFilter</ForefrontServerAbstractSettings>
+        </Event>
+        <Role>ExternalRecipient</Role>
+        <Subject>%Product% detected a file filter match</Subject>
+        <To>%ERAddresses%</To>
+      </FSENotifications>
+      <FSENotifications>
+        <Bcc></Bcc>
+        <Body>%Product% has detected a keyword filter match.
+
+      Filter name:  "%Filter%"
+      State:  "%State%"
+      Subject line:  "%Message%"
+      Sender:  "%ISName%%ESName%"
+      Scan job:  "%ScanJob%"
+      Location:  "%Company%/%Site%/%Server% (%Folder%)"</Body>
+        <Cc></Cc>
+        <Enabled>true</Enabled>
+        <Event>
+          <ForefrontServerAbstractSettings>KeywordFilter</ForefrontServerAbstractSettings>
+        </Event>
+        <Role>Administrator</Role>
+        <Subject>%Product% detected a keyword filter match</Subject>
+        <To>Exchange-Reports@arin.net</To>
+      </FSENotifications>
+      <FSENotifications>
+        <Bcc></Bcc>
+        <Body>%Product% has detected a keyword filter match.
+
+      Filter name:  "%Filter%"
+      State:  "%State%"
+      Subject line:  "%Message%"
+      Sender:  "%ISName%%ESName%"
+      Scan job:  "%ScanJob%"
+      Location:  "%Company%/%Site%/%Server% (%Folder%)"</Body>
+        <Cc></Cc>
+        <Enabled>false</Enabled>
+        <Event>
+          <ForefrontServerAbstractSettings>KeywordFilter</ForefrontServerAbstractSettings>
+        </Event>
+        <Role>InternalSender</Role>
+        <Subject>%Product% detected a keyword filter match</Subject>
+        <To>%ISAddress%</To>
+      </FSENotifications>
+      <FSENotifications>
+        <Bcc></Bcc>
+        <Body>%Product% has detected a keyword filter match.
+
+      Filter name:  "%Filter%"
+      State:  "%State%"
+      Subject line:  "%Message%"
+      Sender:  "%ISName%%ESName%"
+      Scan job:  "%ScanJob%"
+      Location:  "%Company%/%Site%/%Server% (%Folder%)"</Body>
+        <Cc></Cc>
+        <Enabled>false</Enabled>
+        <Event>
+          <ForefrontServerAbstractSettings>KeywordFilter</ForefrontServerAbstractSettings>
+        </Event>
+        <Role>InternalRecipient</Role>
+        <Subject>%Product% detected a keyword filter match</Subject>
+        <To>%IRAddresses%</To>
+      </FSENotifications>
+      <FSENotifications>
+        <Bcc></Bcc>
+        <Body>%Product% has detected a keyword filter match.
+
+      Filter name:  "%Filter%"
+      State:  "%State%"
+      Subject line:  "%Message%"
+      Sender:  "%ISName%%ESName%"
+      Scan job:  "%ScanJob%"
+      Location:  "%Company%/%Site%/%Server% (%Folder%)"</Body>
+        <Cc></Cc>
+        <Enabled>false</Enabled>
+        <Event>
+          <ForefrontServerAbstractSettings>KeywordFilter</ForefrontServerAbstractSettings>
+        </Event>
+        <Role>ExternalSender</Role>
+        <Subject>%Product% detected a keyword filter match</Subject>
+        <To>%ERAddresses%</To>
+      </FSENotifications>
+      <FSENotifications>
+        <Bcc></Bcc>
+        <Body>%Product% has detected a keyword filter match.
+
+      Filter name:  "%Filter%"
+      State:  "%State%"
+      Subject line:  "%Message%"
+      Sender:  "%ISName%%ESName%"
+      Scan job:  "%ScanJob%"
+      Location:  "%Company%/%Site%/%Server% (%Folder%)"</Body>
+        <Cc></Cc>
+        <Enabled>false</Enabled>
+        <Event>
+          <ForefrontServerAbstractSettings>KeywordFilter</ForefrontServerAbstractSettings>
+        </Event>
+        <Role>ExternalRecipient</Role>
+        <Subject>%Product% detected a keyword filter match</Subject>
+        <To>%ERAddresses%</To>
+      </FSENotifications>
+      <FSENotifications>
+        <Bcc></Bcc>
+        <Body>%Product% has detected a subject line filter match.
+
+      Filter name:  "%Filter%"
+      State:  "%State%"
+      Subject line:  "%Message%"
+      Sender:  "%ISName%%ESName%"
+      Scan job:  "%ScanJob%"
+      Location:  "%Company%/%Site%/%Server% (%Folder%)"</Body>
+        <Cc></Cc>
+        <Enabled>true</Enabled>
+        <Event>
+          <ForefrontServerAbstractSettings>SubjectFilter</ForefrontServerAbstractSettings>
+        </Event>
+        <Role>Administrator</Role>
+        <Subject>%Product% detected a subject line filter match</Subject>
+        <To>Exchange-Reports@arin.net</To>
+      </FSENotifications>
+      <FSENotifications>
+        <Bcc></Bcc>
+        <Body>%Product% has detected a subject line filter match.
+
+      Filter name:  "%Filter%"
+      State:  "%State%"
+      Subject line:  "%Message%"
+      Sender:  "%ISName%%ESName%"
+      Scan job:  "%ScanJob%"
+      Location:  "%Company%/%Site%/%Server% (%Folder%)"</Body>
+        <Cc></Cc>
+        <Enabled>false</Enabled>
+        <Event>
+          <ForefrontServerAbstractSettings>SubjectFilter</ForefrontServerAbstractSettings>
+        </Event>
+        <Role>InternalSender</Role>
+        <Subject>%Product% detected a subject line filter match</Subject>
+        <To>%ISAddress%</To>
+      </FSENotifications>
+      <FSENotifications>
+        <Bcc></Bcc>
+        <Body>%Product% has detected a subject line filter match.
+
+      Filter name:  "%Filter%"
+      State:  "%State%"
+      Subject line:  "%Message%"
+      Sender:  "%ISName%%ESName%"
+      Scan job:  "%ScanJob%"
+      Location:  "%Company%/%Site%/%Server% (%Folder%)"</Body>
+        <Cc></Cc>
+        <Enabled>false</Enabled>
+        <Event>
+          <ForefrontServerAbstractSettings>SubjectFilter</ForefrontServerAbstractSettings>
+        </Event>
+        <Role>InternalRecipient</Role>
+        <Subject>%Product% detected a subject line filter match</Subject>
+        <To>%IRAddresses%</To>
+      </FSENotifications>
+      <FSENotifications>
+        <Bcc></Bcc>
+        <Body>%Product% has detected a subject line filter match.
+
+      Filter name:  "%Filter%"
+      State:  "%State%"
+      Subject line:  "%Message%"
+      Sender:  "%ISName%%ESName%"
+      Scan job:  "%ScanJob%"
+      Location:  "%Company%/%Site%/%Server% (%Folder%)"</Body>
+        <Cc></Cc>
+        <Enabled>false</Enabled>
+        <Event>
+          <ForefrontServerAbstractSettings>SubjectFilter</ForefrontServerAbstractSettings>
+        </Event>
+        <Role>ExternalSender</Role>
+        <Subject>%Product% detected a subject line filter match</Subject>
+        <To>%ERAddresses%</To>
+      </FSENotifications>
+      <FSENotifications>
+        <Bcc></Bcc>
+        <Body>%Product% has detected a subject line filter match.
+
+      Filter name:  "%Filter%"
+      State:  "%State%"
+      Subject line:  "%Message%"
+      Sender:  "%ISName%%ESName%"
+      Scan job:  "%ScanJob%"
+      Location:  "%Company%/%Site%/%Server% (%Folder%)"</Body>
+        <Cc></Cc>
+        <Enabled>false</Enabled>
+        <Event>
+          <ForefrontServerAbstractSettings>SubjectFilter</ForefrontServerAbstractSettings>
+        </Event>
+        <Role>ExternalRecipient</Role>
+        <Subject>%Product% detected a subject line filter match</Subject>
+        <To>%ERAddresses%</To>
+      </FSENotifications>
+      <FSENotifications>
+        <Bcc></Bcc>
+        <Body>%Product% has detected a sender-domain filter match.
+
+      Filter name:  "%Filter%"
+      State:  "%State%"
+      Subject line:  "%Message%"
+      Sender:  "%ISName%%ESName%"
+      Scan job:  "%ScanJob%"
+      Location:  "%Company%/%Site%/%Server% (%Folder%)"</Body>
+        <Cc></Cc>
+        <Enabled>true</Enabled>
+        <Event>
+          <ForefrontServerAbstractSettings>SenderFilter</ForefrontServerAbstractSettings>
+        </Event>
+        <Role>Administrator</Role>
+        <Subject>%Product% detected a sender-domain filter match</Subject>
+        <To>Exchange-Reports@arin.net</To>
+      </FSENotifications>
+      <FSENotifications>
+        <Bcc></Bcc>
+        <Body>%Product% has detected a sender-domain filter match.
+
+      Filter name:  "%Filter%"
+      State:  "%State%"
+      Subject line:  "%Message%"
+      Sender:  "%ISName%%ESName%"
+      Scan job:  "%ScanJob%"
+      Location:  "%Company%/%Site%/%Server% (%Folder%)"</Body>
+        <Cc></Cc>
+        <Enabled>false</Enabled>
+        <Event>
+          <ForefrontServerAbstractSettings>SenderFilter</ForefrontServerAbstractSettings>
+        </Event>
+        <Role>InternalSender</Role>
+        <Subject>%Product% detected a sender-domain filter match</Subject>
+        <To>%ISAddress%</To>
+      </FSENotifications>
+      <FSENotifications>
+        <Bcc></Bcc>
+        <Body>%Product% has detected a sender-domain filter match.
+
+      Filter name:  "%Filter%"
+      State:  "%State%"
+      Subject line:  "%Message%"
+      Sender:  "%ISName%%ESName%"
+      Scan job:  "%ScanJob%"
+      Location:  "%Company%/%Site%/%Server% (%Folder%)"</Body>
+        <Cc></Cc>
+        <Enabled>false</Enabled>
+        <Event>
+          <ForefrontServerAbstractSettings>SenderFilter</ForefrontServerAbstractSettings>
+        </Event>
+        <Role>InternalRecipient</Role>
+        <Subject>%Product% detected a sender-domain filter match</Subject>
+        <To>%IRAddresses%</To>
+      </FSENotifications>
+      <FSENotifications>
+        <Bcc></Bcc>
+        <Body>%Product% has detected a sender-domain filter match.
+
+      Filter name:  "%Filter%"
+      State:  "%State%"
+      Subject line:  "%Message%"
+      Sender:  "%ISName%%ESName%"
+      Scan job:  "%ScanJob%"
+      Location:  "%Company%/%Site%/%Server% (%Folder%)"</Body>
+        <Cc></Cc>
+        <Enabled>false</Enabled>
+        <Event>
+          <ForefrontServerAbstractSettings>SenderFilter</ForefrontServerAbstractSettings>
+        </Event>
+        <Role>ExternalSender</Role>
+        <Subject>%Product% detected a sender-domain filter match</Subject>
+        <To>%ERAddresses%</To>
+      </FSENotifications>
+      <FSENotifications>
+        <Bcc></Bcc>
+        <Body>%Product% has detected a sender-domain filter match.
+
+      Filter name:  "%Filter%"
+      State:  "%State%"
+      Subject line:  "%Message%"
+      Sender:  "%ISName%%ESName%"
+      Scan job:  "%ScanJob%"
+      Location:  "%Company%/%Site%/%Server% (%Folder%)"</Body>
+        <Cc></Cc>
+        <Enabled>false</Enabled>
+        <Event>
+          <ForefrontServerAbstractSettings>SenderFilter</ForefrontServerAbstractSettings>
+        </Event>
+        <Role>ExternalRecipient</Role>
+        <Subject>%Product% detected a sender-domain filter match</Subject>
+        <To>%ERAddresses%</To>
+      </FSENotifications>
+      <FSENotifications>
+        <Bcc></Bcc>
+        <Body>%Product% has detected a message that exceeded a configured limit.
+
+      Error name:  "%Malware%"
+      File name:  "%File%"
+      State:  "%State%"
+      Subject line:  "%Message%"
+      Sender:  "%ISName%%ESName%"
+      Scan job:  "%ScanJob%"
+      Location:  "%Company%/%Site%/%Server% (%Folder%)"</Body>
+        <Cc></Cc>
+        <Enabled>true</Enabled>
+        <Event>
+          <ForefrontServerAbstractSettings>FileError</ForefrontServerAbstractSettings>
+        </Event>
+        <Role>Administrator</Role>
+        <Subject>%Product% detected a file error</Subject>
+        <To>Exchange-Reports@arin.net</To>
+      </FSENotifications>
+      <FSENotifications>
+        <Bcc></Bcc>
+        <Body>%Product% has detected a message that exceeded a configured limit.
+
+      Error name:  "%Malware%"
+      File name:  "%File%"
+      State:  "%State%"
+      Subject line:  "%Message%"
+      Sender:  "%ISName%%ESName%"
+      Scan job:  "%ScanJob%"
+      Location:  "%Company%/%Site%/%Server% (%Folder%)"</Body>
+        <Cc></Cc>
+        <Enabled>false</Enabled>
+        <Event>
+          <ForefrontServerAbstractSettings>FileError</ForefrontServerAbstractSettings>
+        </Event>
+        <Role>InternalSender</Role>
+        <Subject>%Product% detected a file error</Subject>
+        <To>%ISAddress%</To>
+      </FSENotifications>
+      <FSENotifications>
+        <Bcc></Bcc>
+        <Body>%Product% has detected a message that exceeded a configured limit.
+
+      Error name:  "%Malware%"
+      File name:  "%File%"
+      State:  "%State%"
+      Subject line:  "%Message%"
+      Sender:  "%ISName%%ESName%"
+      Scan job:  "%ScanJob%"
+      Location:  "%Company%/%Site%/%Server% (%Folder%)"</Body>
+        <Cc></Cc>
+        <Enabled>false</Enabled>
+        <Event>
+          <ForefrontServerAbstractSettings>FileError</ForefrontServerAbstractSettings>
+        </Event>
+        <Role>InternalRecipient</Role>
+        <Subject>%Product% detected a file error</Subject>
+        <To>%IRAddresses%</To>
+      </FSENotifications>
+      <FSENotifications>
+        <Bcc></Bcc>
+        <Body>%Product% has detected a message that exceeded a configured limit.
+
+      Error name:  "%Malware%"
+      File name:  "%File%"
+      State:  "%State%"
+      Subject line:  "%Message%"
+      Sender:  "%ISName%%ESName%"
+      Scan job:  "%ScanJob%"
+      Location:  "%Company%/%Site%/%Server% (%Folder%)"</Body>
+        <Cc></Cc>
+        <Enabled>false</Enabled>
+        <Event>
+          <ForefrontServerAbstractSettings>FileError</ForefrontServerAbstractSettings>
+        </Event>
+        <Role>ExternalSender</Role>
+        <Subject>%Product% detected a file error</Subject>
+        <To>%ERAddresses%</To>
+      </FSENotifications>
+      <FSENotifications>
+        <Bcc></Bcc>
+        <Body>%Product% has detected a message that exceeded a configured limit.
+
+      Error name:  "%Malware%"
+      File name:  "%File%"
+      State:  "%State%"
+      Subject line:  "%Message%"
+      Sender:  "%ISName%%ESName%"
+      Scan job:  "%ScanJob%"
+      Location:  "%Company%/%Site%/%Server% (%Folder%)"</Body>
+        <Cc></Cc>
+        <Enabled>false</Enabled>
+        <Event>
+          <ForefrontServerAbstractSettings>FileError</ForefrontServerAbstractSettings>
+        </Event>
+        <Role>ExternalRecipient</Role>
+        <Subject>%Product% detected a file error</Subject>
+        <To>%ERAddresses%</To>
+      </FSENotifications>
+      <FSENotifications>
+        <Bcc></Bcc>
+        <Body>%Product% has encountered a scanning error.
+
+      Error name:  "%Malware%"
+      File name:  "%File%"
+      State:  "%State%"
+      Subject line:  "%Message%"
+      Sender:  "%ISName%%ESName%"
+      Scan job:  "%ScanJob%"
+      Location:  "%Company%/%Site%/%Server% (%Folder%)"</Body>
+        <Cc></Cc>
+        <Enabled>true</Enabled>
+        <Event>
+          <ForefrontServerAbstractSettings>ScanError</ForefrontServerAbstractSettings>
+        </Event>
+        <Role>Administrator</Role>
+        <Subject>%Product% scan error</Subject>
+        <To>Exchange-Reports@arin.net</To>
+      </FSENotifications>
+      <FSENotifications>
+        <Bcc></Bcc>
+        <Body>%Product% has encountered a scanning error.
+
+      Error name:  "%Malware%"
+      File name:  "%File%"
+      State:  "%State%"
+      Subject line:  "%Message%"
+      Sender:  "%ISName%%ESName%"
+      Scan job:  "%ScanJob%"
+      Location:  "%Company%/%Site%/%Server% (%Folder%)"</Body>
+        <Cc></Cc>
+        <Enabled>false</Enabled>
+        <Event>
+          <ForefrontServerAbstractSettings>ScanError</ForefrontServerAbstractSettings>
+        </Event>
+        <Role>InternalSender</Role>
+        <Subject>%Product% scan error</Subject>
+        <To>%ISAddress%</To>
+      </FSENotifications>
+      <FSENotifications>
+        <Bcc></Bcc>
+        <Body>%Product% has encountered a scanning error.
+
+      Error name:  "%Malware%"
+      File name:  "%File%"
+      State:  "%State%"
+      Subject line:  "%Message%"
+      Sender:  "%ISName%%ESName%"
+      Scan job:  "%ScanJob%"
+      Location:  "%Company%/%Site%/%Server% (%Folder%)"</Body>
+        <Cc></Cc>
+        <Enabled>false</Enabled>
+        <Event>
+          <ForefrontServerAbstractSettings>ScanError</ForefrontServerAbstractSettings>
+        </Event>
+        <Role>InternalRecipient</Role>
+        <Subject>%Product% scan error</Subject>
+        <To>%IRAddresses%</To>
+      </FSENotifications>
+      <FSENotifications>
+        <Bcc></Bcc>
+        <Body>%Product% has encountered a scanning error.
+
+      Error name:  "%Malware%"
+      File name:  "%File%"
+      State:  "%State%"
+      Subject line:  "%Message%"
+      Sender:  "%ISName%%ESName%"
+      Scan job:  "%ScanJob%"
+      Location:  "%Company%/%Site%/%Server% (%Folder%)"</Body>
+        <Cc></Cc>
+        <Enabled>false</Enabled>
+        <Event>
+          <ForefrontServerAbstractSettings>ScanError</ForefrontServerAbstractSettings>
+        </Event>
+        <Role>ExternalSender</Role>
+        <Subject>%Product% scan error</Subject>
+        <To>%ERAddresses%</To>
+      </FSENotifications>
+      <FSENotifications>
+        <Bcc></Bcc>
+        <Body>%Product% has encountered a scanning error.
+
+      Error name:  "%Malware%"
+      File name:  "%File%"
+      State:  "%State%"
+      Subject line:  "%Message%"
+      Sender:  "%ISName%%ESName%"
+      Scan job:  "%ScanJob%"
+      Location:  "%Company%/%Site%/%Server% (%Folder%)"</Body>
+        <Cc></Cc>
+        <Enabled>false</Enabled>
+        <Event>
+          <ForefrontServerAbstractSettings>ScanError</ForefrontServerAbstractSettings>
+        </Event>
+        <Role>ExternalRecipient</Role>
+        <Subject>%Product% scan error</Subject>
+        <To>%ERAddresses%</To>
+      </FSENotifications>
+      <FSENotifications>
+        <Bcc></Bcc>
+        <Body>%Product% has detected a worm.
+
+      Worm name:  "%Malware%"
+      File name:  "%File%"
+      State:  "%State%"
+      Subject line:  "%Message%"
+      Sender:  "%ISName%%ESName%"
+      Scan job:  "%ScanJob%"
+      Location:  "%Company%/%Site%/%Server% (%Folder%)"</Body>
+        <Cc></Cc>
+        <Enabled>true</Enabled>
+        <Event>
+          <ForefrontServerAbstractSettings>Worm</ForefrontServerAbstractSettings>
+        </Event>
+        <Role>Administrator</Role>
+        <Subject>%Product% detected a worm</Subject>
+        <To>Exchange-Reports@arin.net</To>
+      </FSENotifications>
+      <FSENotifications>
+        <Bcc></Bcc>
+        <Body>%Product%:  The %ScanJob% has started successfully on %Company%/%Site%/%Server%.</Body>
+        <Cc></Cc>
+        <Enabled>true</Enabled>
+        <Event>
+          <ForefrontServerAbstractSettings>ScanStartup</ForefrontServerAbstractSettings>
+        </Event>
+        <Role>Administrator</Role>
+        <Subject>%Product% scan startup</Subject>
+        <To>Exchange-Reports@arin.net</To>
+      </FSENotifications>
+      <FSENotifications>
+        <Bcc></Bcc>
+        <Body>Your %LicenseType% license of %Product% will expire in %NumDays% day(s). %EvalText%Please contact your sales representative to purchase %Product%. For more information, please refer to %HowToBuyLink%.</Body>
+        <Cc></Cc>
+        <Enabled>true</Enabled>
+        <Event>
+          <ForefrontServerAbstractSettings>LicenseWarning</ForefrontServerAbstractSettings>
+        </Event>
+        <Role>Administrator</Role>
+        <Subject>%Product% License Warning Notification</Subject>
+        <To>Exchange-Reports@arin.net</To>
+      </FSENotifications>
+      <FSENotifications>
+        <Bcc></Bcc>
+        <Body>Your %LicenseType% license of %Product% has expired. %SubscriptionText%Subsequently, scanner updates will be disabled and the product will operate with reduced functionality. Please contact your sales representative to purchase %Product%. For more information, please refer to %HowToBuyLink%.</Body>
+        <Cc></Cc>
+        <Enabled>true</Enabled>
+        <Event>
+          <ForefrontServerAbstractSettings>LicenseExpired</ForefrontServerAbstractSettings>
+        </Event>
+        <Role>Administrator</Role>
+        <Subject>%Product% License Expiration Notification</Subject>
+        <To>Exchange-Reports@arin.net</To>
+      </FSENotifications>
+      <FSENotifications>
+        <Bcc></Bcc>
+        <Body>The database used to store incidents and quarantine information for %Product% has grown larger than %MaximumSize% MB.  (It is currently %CurrentSize% MB.)  If you want to recover disk space from this database, you can change the configuration settings for automatic purging of incidents and quarantine, or you can delete items manually.  For more information, please refer to your %Product% documentation.</Body>
+        <Cc></Cc>
+        <Enabled>true</Enabled>
+        <Event>
+          <ForefrontServerAbstractSettings>DatabaseSizeWarning</ForefrontServerAbstractSettings>
+        </Event>
+        <Role>Administrator</Role>
+        <Subject>%Product% Database Size Warning</Subject>
+        <To>Exchange-Reports@arin.net</To>
+      </FSENotifications>
+      <FSENotifications>
+        <Bcc></Bcc>
+        <Body>%Details%</Body>
+        <Cc></Cc>
+        <Enabled>false</Enabled>
+        <Event>
+          <ForefrontServerAbstractSettings>EngineUpdateSuccess</ForefrontServerAbstractSettings>
+        </Event>
+        <Role>Administrator</Role>
+        <Subject>%Product% successfully updated the %Engine% scan engine on server %Server%</Subject>
+        <To>Exchange-Reports@arin.net</To>
+      </FSENotifications>
+      <FSENotifications>
+        <Bcc></Bcc>
+        <Body>%Details%</Body>
+        <Cc></Cc>
+        <Enabled>true</Enabled>
+        <Event>
+          <ForefrontServerAbstractSettings>EngineUpdateFailure</ForefrontServerAbstractSettings>
+        </Event>
+        <Role>Administrator</Role>
+        <Subject>%Product% failed to update the %Engine% scan engine on server %Server%</Subject>
+        <To>Exchange-Reports@arin.net</To>
+      </FSENotifications>
+      <FSENotifications>
+        <Bcc></Bcc>
+        <Body>%Details%</Body>
+        <Cc></Cc>
+        <Enabled>false</Enabled>
+        <Event>
+          <ForefrontServerAbstractSettings>EngineUpdateNotAvailable</ForefrontServerAbstractSettings>
+        </Event>
+        <Role>Administrator</Role>
+        <Subject>%Product% found no new updates for the %Engine% scan engine on server %Server%</Subject>
+        <To>Exchange-Reports@arin.net</To>
+      </FSENotifications>
+      <FSENotifications>
+        <Bcc></Bcc>
+        <Body>The %Engine% scan engine is no longer supported. Updates are no longer available for this engine, and therefore the update check for this engine has been disabled.  Please review the scan engines chosen for your scan jobs and make another selection to ensure up-to-date protection. For more information, see the following knowledge base article: %Details%</Body>
+        <Cc></Cc>
+        <Enabled>true</Enabled>
+        <Event>
+          <ForefrontServerAbstractSettings>EngineNotSupported</ForefrontServerAbstractSettings>
+        </Event>
+        <Role>Administrator</Role>
+        <Subject>%Product% engine selection error</Subject>
+        <To></To>
+      </FSENotifications>
+      <FSENotifications>
+        <Bcc></Bcc>
+        <Body>ERROR: %Product%:  The Monitor detected abnormal shutdown of: %Process%.</Body>
+        <Cc></Cc>
+        <Enabled>true</Enabled>
+        <Event>
+          <ForefrontServerAbstractSettings>AbnormalShutdown</ForefrontServerAbstractSettings>
+        </Event>
+        <Role>Administrator</Role>
+        <Subject>%Product%: Critical Notification</Subject>
+        <To>Exchange-Reports@arin.net</To>
+      </FSENotifications>
+      <FSENotifications>
+        <Bcc></Bcc>
+        <Body>%Product%:  The %ScanJob% did not start successfully.</Body>
+        <Cc></Cc>
+        <Enabled>true</Enabled>
+        <Event>
+          <ForefrontServerAbstractSettings>ScanInitError</ForefrontServerAbstractSettings>
+        </Event>
+        <Role>Administrator</Role>
+        <Subject>%Product%: Critical Notification</Subject>
+        <To>Exchange-Reports@arin.net</To>
+      </FSENotifications>
+      <FSENotifications>
+        <Bcc></Bcc>
+        <Body>%Product%:  The %ScanJob% recovered from a startup failure.  You can ignore the previous warning.</Body>
+        <Cc></Cc>
+        <Enabled>true</Enabled>
+        <Event>
+          <ForefrontServerAbstractSettings>ScanRecovery</ForefrontServerAbstractSettings>
+        </Event>
+        <Role>Administrator</Role>
+        <Subject>%Product%: Critical Notification</Subject>
+        <To>Exchange-Reports@arin.net</To>
+      </FSENotifications>
+      <FSENotifications>
+        <Bcc></Bcc>
+        <Body>%Product%:  The %ScanJob% has been started with its default settings.  You may want to confirm that the settings in %Product% match what you expect.</Body>
+        <Cc></Cc>
+        <Enabled>true</Enabled>
+        <Event>
+          <ForefrontServerAbstractSettings>ScanRevertToDefault</ForefrontServerAbstractSettings>
+        </Event>
+        <Role>Administrator</Role>
+        <Subject>%Product%: Critical Notification</Subject>
+        <To>Exchange-Reports@arin.net</To>
+      </FSENotifications>
+      <FSENotifications>
+        <Bcc></Bcc>
+        <Body>%Product% has timed out while scanning the following message.
+    
+    %Details%</Body>
+        <Cc></Cc>
+        <Enabled>true</Enabled>
+        <Event>
+          <ForefrontServerAbstractSettings>ScanTimeout</ForefrontServerAbstractSettings>
+        </Event>
+        <Role>Administrator</Role>
+        <Subject>%Product% timeout on %ScanJob% scan job</Subject>
+        <To>Exchange-Reports@arin.net</To>
+      </FSENotifications>
+      <FSENotifications>
+        <Bcc></Bcc>
+        <Body>%Product% has recovered from a timeout while scanning the following message.
+    
+    %Details%</Body>
+        <Cc></Cc>
+        <Enabled>true</Enabled>
+        <Event>
+          <ForefrontServerAbstractSettings>ScanTimeoutRecovery</ForefrontServerAbstractSettings>
+        </Event>
+        <Role>Administrator</Role>
+        <Subject>%Product% has recovered from a timeout on %ScanJob% scan job</Subject>
+        <To>Exchange-Reports@arin.net</To>
+      </FSENotifications>
+      <FSENotifications>
+        <Bcc></Bcc>
+        <Body>WARNING: %Product%: The Information Store scanning subsystem on server %Server% may not be correctly initialized and is currently unable to perform scanning of the store.</Body>
+        <Cc></Cc>
+        <Enabled>true</Enabled>
+        <Event>
+          <ForefrontServerAbstractSettings>StoreInitError</ForefrontServerAbstractSettings>
+        </Event>
+        <Role>Administrator</Role>
+        <Subject>%Product%: Critical Notification</Subject>
+        <To>Exchange-Reports@arin.net</To>
+      </FSENotifications>
+      <FSENotifications>
+        <Bcc></Bcc>
+        <Body>INFORMATION: %Product%:  The Information Store scanning subsystem on server %Server% is online.  You can ignore the previous warning.</Body>
+        <Cc></Cc>
+        <Enabled>true</Enabled>
+        <Event>
+          <ForefrontServerAbstractSettings>StoreRecovery</ForefrontServerAbstractSettings>
+        </Event>
+        <Role>Administrator</Role>
+        <Subject>%Product%: Critical Notification</Subject>
+        <To>Exchange-Reports@arin.net</To>
+      </FSENotifications>
+      <FSENotifications>
+        <Bcc></Bcc>
+        <Body>WARNING: %Product%:  The SMTP scanning subsystem on server %Server% may not be correctly initialized and is currently unable to perform SMTP scans.</Body>
+        <Cc></Cc>
+        <Enabled>true</Enabled>
+        <Event>
+          <ForefrontServerAbstractSettings>SMTPScanInitError</ForefrontServerAbstractSettings>
+        </Event>
+        <Role>Administrator</Role>
+        <Subject>%Product%: Critical Notification</Subject>
+        <To>Exchange-Reports@arin.net</To>
+      </FSENotifications>
+      <FSENotifications>
+        <Bcc></Bcc>
+        <Body>INFORMATION: %Product%:  The SMTP scanning subsystem on server %Server% is online.  You can ignore the previous warning.</Body>
+        <Cc></Cc>
+        <Enabled>true</Enabled>
+        <Event>
+          <ForefrontServerAbstractSettings>SMTPScanInitRecovery</ForefrontServerAbstractSettings>
+        </Event>
+        <Role>Administrator</Role>
+        <Subject>%Product%: Critical Notification</Subject>
+        <To>Exchange-Reports@arin.net</To>
+      </FSENotifications>
+      <FSENotifications>
+        <Bcc></Bcc>
+        <Body>%Product%:  The transport scan had a problem processing the following message.  The message has been archived and purged.
+      
+      Sender:  "%FromAddress%"
+      Recipients:  "%Recipients%"
+      Subject:  "%Subject%"</Body>
+        <Cc></Cc>
+        <Enabled>true</Enabled>
+        <Event>
+          <ForefrontServerAbstractSettings>UnknownError</ForefrontServerAbstractSettings>
+        </Event>
+        <Role>Administrator</Role>
+        <Subject>%Product%: Critical Notification</Subject>
+        <To>Exchange-Reports@arin.net</To>
+      </FSENotifications>
+      <FSENotifications>
+        <Bcc></Bcc>
+        <Body>%Details%</Body>
+        <Cc></Cc>
+        <Enabled>true</Enabled>
+        <Event>
+          <ForefrontServerAbstractSettings>EngineSelectionNeeded</ForefrontServerAbstractSettings>
+        </Event>
+        <Role>Administrator</Role>
+        <Subject>%Product%: Critical Notification</Subject>
+        <To>Exchange-Reports@arin.net</To>
+      </FSENotifications>
+      <FSENotifications>
+        <Bcc></Bcc>
+        <Body>%Product%:  The health monitoring service has detected a change in health status from %OldStatus% to %NewStatus%.
+
+Functionality being checked:  %HealthPoint%
+Old Status:  %OldStatus%
+New Status: %NewStatus%
+Details:  %Details%</Body>
+        <Cc></Cc>
+        <Enabled>true</Enabled>
+        <Event>
+          <ForefrontServerAbstractSettings>HealthChangeToGreen</ForefrontServerAbstractSettings>
+        </Event>
+        <Role>Administrator</Role>
+        <Subject>%Product%: Health Notification</Subject>
+        <To>Exchange-Reports@arin.net</To>
+      </FSENotifications>
+      <FSENotifications>
+        <Bcc></Bcc>
+        <Body>%Product%:  The health monitoring service has detected a change in health status from %OldStatus% to %NewStatus%.
+
+Functionality being checked:  %HealthPoint%
+Old Status:  %OldStatus%
+New Status: %NewStatus%
+Details:  %Details%</Body>
+        <Cc></Cc>
+        <Enabled>true</Enabled>
+        <Event>
+          <ForefrontServerAbstractSettings>HealthChangeToYellow</ForefrontServerAbstractSettings>
+        </Event>
+        <Role>Administrator</Role>
+        <Subject>%Product%: Health Notification</Subject>
+        <To>Exchange-Reports@arin.net</To>
+      </FSENotifications>
+      <FSENotifications>
+        <Bcc></Bcc>
+        <Body>%Product%:  The health monitoring service has detected a change in health status from %OldStatus% to %NewStatus%.
+
+Functionality being checked:  %HealthPoint%
+Old Status:  %OldStatus%
+New Status: %NewStatus%
+Details:  %Details%</Body>
+        <Cc></Cc>
+        <Enabled>true</Enabled>
+        <Event>
+          <ForefrontServerAbstractSettings>HealthChangeToRed</ForefrontServerAbstractSettings>
+        </Event>
+        <Role>Administrator</Role>
+        <Subject>%Product%: Health Notification</Subject>
+        <To>Exchange-Reports@arin.net</To>
+      </FSENotifications>
+    </FSENotification>
+    <GatewayManagement>
+      <EHSGatewayManagement>
+        <Enabled>false</Enabled>
+        <GatewayAdminDomainName i:nil="true" />
+        <GatewayAdminPassword i:nil="true" />
+        <GatewayAdminUserName i:nil="true" />
+        <GatewayServer></GatewayServer>
+        <ProxyPassword i:nil="true" />
+        <ProxyPort>80</ProxyPort>
+        <ProxyServer></ProxyServer>
+        <ProxySettingsEnabled>false</ProxySettingsEnabled>
+        <ProxyUserName i:nil="true" />
+      </EHSGatewayManagement>
+    </GatewayManagement>
+    <IncidentOptions>
+      <FseIncidentOptions>
+        <EnablePurging>false</EnablePurging>
+        <PurgeAfter>30</PurgeAfter>
+        <SizeLimit>4</SizeLimit>
+      </FseIncidentOptions>
+    </IncidentOptions>
+    <LoggingOptions>
+      <FSELoggingOptions>
+        <ArchiveTransportMail>None</ArchiveTransportMail>
+        <EnableCustomerExperienceImprovementProgram>false</EnableCustomerExperienceImprovementProgram>
+        <EnableEventLog>true</EnableEventLog>
+        <EnableEventLogFlags>
+          <ForefrontServerAbstractSettings>Incidents</ForefrontServerAbstractSettings>
+          <ForefrontServerAbstractSettings>Operational</ForefrontServerAbstractSettings>
+          <ForefrontServerAbstractSettings>Engines</ForefrontServerAbstractSettings>
+        </EnableEventLogFlags>
+        <EnableOnDemandIncidentLogging>true</EnableOnDemandIncidentLogging>
+        <EnablePerformanceLog>true</EnablePerformanceLog>
+        <EnableRealtimeIncidentLogging>true</EnableRealtimeIncidentLogging>
+        <EnableScheduledIncidentLogging>true</EnableScheduledIncidentLogging>
+        <EnableSpamAgentLogging>true</EnableSpamAgentLogging>
+        <EnableTransportIncidentLogging>true</EnableTransportIncidentLogging>
+        <EnableTransportSpamIncidentLogging>true</EnableTransportSpamIncidentLogging>
+      </FSELoggingOptions>
+    </LoggingOptions>
+    <OnDemandFilter />
+    <OnDemandScan>
+      <FSEOnDemandScanStatic>
+        <ApplicationName></ApplicationName>
+        <BodyScanning>false</BodyScanning>
+        <CAS></CAS>
+        <DocFilesAsContainers>true</DocFilesAsContainers>
+        <EnableFileFiltering>true</EnableFileFiltering>
+        <EnableHeaderFiltering>true</EnableHeaderFiltering>
+        <EnableVirusScan>true</EnableVirusScan>
+        <EngineUsagePolicy>Available</EngineUsagePolicy>
+        <FileFilteringDeletionText>Microsoft Forefront Protection for Exchange Server removed a file since it was found to match a filter.
+File name: "%File%"
+Filter name: "%Filter%"</FileFilteringDeletionText>
+        <FileFilteringSkipScanOfCompressedFiles>false</FileFilteringSkipScanOfCompressedFiles>
+        <MailboxList />
+        <MailboxScope>NONE</MailboxScope>
+        <MalwareDeletionText>Microsoft Forefront Protection for Exchange Server removed a file since it was found to be infected.
+File name: "%File%"
+Malware name: "%Malware%"</MalwareDeletionText>
+        <MaxContainerScanTime>120</MaxContainerScanTime>
+        <Priority>Normal</Priority>
+        <SuppressMalwareNotifications>false</SuppressMalwareNotifications>
+        <VirusAction>SKIPDETECT</VirusAction>
+        <VirusQuarantine>true</VirusQuarantine>
+      </FSEOnDemandScanStatic>
+    </OnDemandScan>
+    <QuarantineOptions>
+      <FseQuarantineOptions>
+        <EnablePurging>false</EnablePurging>
+        <PurgeAfter>30</PurgeAfter>
+        <RescanOnSend>
+          <ForefrontServerAbstractSettings>Malware</ForefrontServerAbstractSettings>
+        </RescanOnSend>
+      </FseQuarantineOptions>
+    </QuarantineOptions>
+    <RealtimeFilter />
+    <RealtimeScan>
+      <FSERealtimeScan>
+        <BodyScanning>false</BodyScanning>
+        <Bypass>false</Bypass>
+        <DocFilesAsContainers>false</DocFilesAsContainers>
+        <EnableFileFiltering>true</EnableFileFiltering>
+        <EnableHeaderFiltering>true</EnableHeaderFiltering>
+        <EnableSpywareScan>true</EnableSpywareScan>
+        <EnableVirusScan>true</EnableVirusScan>
+        <EnableWormPurge>true</EnableWormPurge>
+        <Enabled>true</Enabled>
+        <EngineUsagePolicy>Available</EngineUsagePolicy>
+        <FileFilteringDeletionText>Microsoft Forefront Protection for Exchange Server removed a file since it was found to match a filter.
+File name: "%File%"
+Filter name: "%Filter%"</FileFilteringDeletionText>
+        <FileFilteringSkipScanofCompressedFiles>false</FileFilteringSkipScanofCompressedFiles>
+        <MailboxList />
+        <MailboxScope>ALL</MailboxScope>
+        <MalwareDeletionText>Microsoft Forefront Protection for Exchange Server removed a file since it was found to be infected.
+File name: "%File%"
+Malware name: "%Malware%"</MalwareDeletionText>
+        <MaxContainerScanTime>120</MaxContainerScanTime>
+        <ProcessCount>4</ProcessCount>
+        <PublicFolderList />
+        <PublicFolderScope>ALL</PublicFolderScope>
+        <ScanOnSignatureUpdate>false</ScanOnSignatureUpdate>
+        <SpywareAction>DELETE</SpywareAction>
+        <SpywareQuarantine>true</SpywareQuarantine>
+        <SuppressMalwareNotifications>false</SuppressMalwareNotifications>
+        <Timeout>150</Timeout>
+        <TimeoutAction>DELETE</TimeoutAction>
+        <VirusAction>CLEAN</VirusAction>
+        <VirusQuarantine>true</VirusQuarantine>
+      </FSERealtimeScan>
+    </RealtimeScan>
+    <ScheduledFilter />
+    <ScheduledScan>
+      <FSEScheduledScan>
+        <BodyScanning>false</BodyScanning>
+        <DocFilesAsContainers>false</DocFilesAsContainers>
+        <EnableFileFiltering>true</EnableFileFiltering>
+        <EnableHeaderFiltering>true</EnableHeaderFiltering>
+        <EnableRepeat>false</EnableRepeat>
+        <EnableSchedule>false</EnableSchedule>
+        <EnableSpywareScan>true</EnableSpywareScan>
+        <EnableVirusScan>true</EnableVirusScan>
+        <EnableWormPurge>true</EnableWormPurge>
+        <EngineUsagePolicy>Available</EngineUsagePolicy>
+        <FileFilteringDeletionText>Microsoft Forefront Protection for Exchange Server removed a file since it was found to match a filter.
+File name: "%File%"
+Filter name: "%Filter%"</FileFilteringDeletionText>
+        <FileFilteringSkipScanofCompressedFiles>false</FileFilteringSkipScanofCompressedFiles>
+        <Frequency>Once</Frequency>
+        <MailWithAttachment>true</MailWithAttachment>
+        <MailboxList />
+        <MailboxScope>ALL</MailboxScope>
+        <MalwareDeletionText>Microsoft Forefront Protection for Exchange Server removed a file since it was found to be infected.
+File name: "%File%"
+Malware name: "%Malware%"</MalwareDeletionText>
+        <MaxContainerScanTime>120</MaxContainerScanTime>
+        <MessagesReceivedInPast>Two_days</MessagesReceivedInPast>
+        <OnlyUnscannedMessage>false</OnlyUnscannedMessage>
+        <Priority>Normal</Priority>
+        <ProcessCount>1</ProcessCount>
+        <PublicFolderList />
+        <PublicFolderScope>ALL</PublicFolderScope>
+        <RepeatInterval>PT23H59M</RepeatInterval>
+        <ScanOnSignatureUpdate>false</ScanOnSignatureUpdate>
+        <ScheduleStart>2009-01-01T00:00:00-05:00</ScheduleStart>
+        <SpywareAction>DELETE</SpywareAction>
+        <SpywareQuarantine>true</SpywareQuarantine>
+        <SuppressMalwareNotifications>false</SuppressMalwareNotifications>
+        <Timeout>150</Timeout>
+        <TimeoutAction>DELETE</TimeoutAction>
+        <VirusAction>CLEAN</VirusAction>
+        <VirusQuarantine>true</VirusQuarantine>
+        <WindowOfScanTime>PT1H</WindowOfScanTime>
+        <WindowOfScanTimeEnabled>false</WindowOfScanTimeEnabled>
+      </FSEScheduledScan>
+    </ScheduledScan>
+    <SignatureUpdate>
+      <FseSignatureUpdate>
+        <Category>AntiMalware</Category>
+        <EnableRepeat>true</EnableRepeat>
+        <EnableSchedule>true</EnableSchedule>
+        <Frequency>Daily</Frequency>
+        <PrimaryUpdatePath>http://forefrontdl.microsoft.com/server/scanengineupdate</PrimaryUpdatePath>
+        <RepeatInterval>PT1H</RepeatInterval>
+        <ScheduleStart>2010-07-21T12:18:40Z</ScheduleStart>
+        <SecondaryUpdatePath></SecondaryUpdatePath>
+        <Engine>NORMAN</Engine>
+      </FseSignatureUpdate>
+      <FseSignatureUpdate>
+        <Category>AntiMalware</Category>
+        <EnableRepeat>true</EnableRepeat>
+        <EnableSchedule>true</EnableSchedule>
+        <Frequency>Daily</Frequency>
+        <PrimaryUpdatePath>http://forefrontdl.microsoft.com/server/scanengineupdate</PrimaryUpdatePath>
+        <RepeatInterval>PT1H</RepeatInterval>
+        <ScheduleStart>2010-07-21T12:18:40Z</ScheduleStart>
+        <SecondaryUpdatePath></SecondaryUpdatePath>
+        <Engine>MICROSOFT</Engine>
+      </FseSignatureUpdate>
+      <FseSignatureUpdate>
+        <Category>AntiMalware</Category>
+        <EnableRepeat>true</EnableRepeat>
+        <EnableSchedule>true</EnableSchedule>
+        <Frequency>Daily</Frequency>
+        <PrimaryUpdatePath>http://forefrontdl.microsoft.com/server/scanengineupdate</PrimaryUpdatePath>
+        <RepeatInterval>PT1H</RepeatInterval>
+        <ScheduleStart>2010-07-21T12:18:40Z</ScheduleStart>
+        <SecondaryUpdatePath></SecondaryUpdatePath>
+        <Engine>AUTHENTIUM</Engine>
+      </FseSignatureUpdate>
+      <FseSignatureUpdate>
+        <Category>AntiMalware</Category>
+        <EnableRepeat>true</EnableRepeat>
+        <EnableSchedule>true</EnableSchedule>
+        <Frequency>Daily</Frequency>
+        <PrimaryUpdatePath>http://forefrontdl.microsoft.com/server/scanengineupdate</PrimaryUpdatePath>
+        <RepeatInterval>PT1H</RepeatInterval>
+        <ScheduleStart>2010-07-21T12:18:40Z</ScheduleStart>
+        <SecondaryUpdatePath></SecondaryUpdatePath>
+        <Engine>WORMLIST</Engine>
+      </FseSignatureUpdate>
+      <FseSignatureUpdate>
+        <Category>AntiMalware</Category>
+        <EnableRepeat>true</EnableRepeat>
+        <EnableSchedule>true</EnableSchedule>
+        <Frequency>Daily</Frequency>
+        <PrimaryUpdatePath>http://forefrontdl.microsoft.com/server/scanengineupdate</PrimaryUpdatePath>
+        <RepeatInterval>PT1H</RepeatInterval>
+        <ScheduleStart>2010-07-21T12:18:40Z</ScheduleStart>
+        <SecondaryUpdatePath></SecondaryUpdatePath>
+        <Engine>VIRUSBUSTER</Engine>
+      </FseSignatureUpdate>
+      <FseSignatureUpdate>
+        <Category>AntiMalware</Category>
+        <EnableRepeat>true</EnableRepeat>
+        <EnableSchedule>true</EnableSchedule>
+        <Frequency>Daily</Frequency>
+        <PrimaryUpdatePath>http://forefrontdl.microsoft.com/server/scanengineupdate</PrimaryUpdatePath>
+        <RepeatInterval>PT1H</RepeatInterval>
+        <ScheduleStart>2010-07-21T12:18:40Z</ScheduleStart>
+        <SecondaryUpdatePath></SecondaryUpdatePath>
+        <Engine>KASPERSKY</Engine>
+      </FseSignatureUpdate>
+      <FseSignatureUpdate>
+        <Category>AntiSpam</Category>
+        <EnableRepeat>true</EnableRepeat>
+        <EnableSchedule>true</EnableSchedule>
+        <Frequency>Daily</Frequency>
+        <PrimaryUpdatePath>http://forefrontdl.microsoft.com/server/scanengineupdate</PrimaryUpdatePath>
+        <RepeatInterval>PT1H</RepeatInterval>
+        <ScheduleStart>2010-07-21T12:28:40Z</ScheduleStart>
+        <SecondaryUpdatePath></SecondaryUpdatePath>
+        <Engine>CLOUDMARK</Engine>
+      </FseSignatureUpdate>
+    </SignatureUpdate>
+    <SignatureUpdateOptions>
+      <FSSSignatureOptions>
+        <DownloadTimeout>300</DownloadTimeout>
+        <ProxyEnabled>false</ProxyEnabled>
+        <ProxyPassword i:nil="true" />
+        <ProxyPort>80</ProxyPort>
+        <ProxyServer></ProxyServer>
+        <ProxyUsername i:nil="true" />
+        <RedistributionServer>false</RedistributionServer>
+        <UNCEnabled>false</UNCEnabled>
+        <UNCPassword i:nil="true" />
+        <UNCUsername i:nil="true" />
+        <UpdateAtStartup>false</UpdateAtStartup>
+      </FSSSignatureOptions>
+    </SignatureUpdateOptions>
+    <SpamConnectionFilter>
+      <FSESpamConnectionFilter>
+        <DnsBlockAnyMatch>true</DnsBlockAnyMatch>
+        <DnsBlockListIPAddressMatch />
+        <EnableDnsBlockList>true</EnableDnsBlockList>
+        <Enabled>true</Enabled>
+      </FSESpamConnectionFilter>
+    </SpamConnectionFilter>
+    <SpamContentFilter>
+      <FSESpamContentFilter>
+        <AllowedRecipient />
+        <AllowedSender>
+          <string>root@arin.net</string>
+          <string>MAILER-DAEMON@arin.net</string>
+          <string>logwatch@arin.net</string>
+          <string>logwatch@whoisrws-demo.localdomain</string>
+          <string>mailman-bounces@arin.net</string>
+        </AllowedSender>
+        <AllowedSenderDomain />
+        <EnableStatisticsUpload>false</EnableStatisticsUpload>
+        <Enabled>true</Enabled>
+        <RejectionResponse>Message rejected due to content restrictions</RejectionResponse>
+        <SpamAction>Reject</SpamAction>
+        <SuspectAction>Deliver</SuspectAction>
+        <Threshold>7</Threshold>
+      </FSESpamContentFilter>
+    </SpamContentFilter>
+    <SpamFiltering>
+      <FSESpamFiltering>
+        <Enabled>true</Enabled>
+      </FSESpamFiltering>
+    </SpamFiltering>
+    <TransportFilter />
+    <TransportScan>
+      <FSETransportScan>
+        <AVStamping>true</AVStamping>
+        <Bypass>false</Bypass>
+        <DocFilesAsContainers>true</DocFilesAsContainers>
+        <EnableFileFiltering>true</EnableFileFiltering>
+        <EnableHeaderFiltering>true</EnableHeaderFiltering>
+        <EnableKeywordFiltering>true</EnableKeywordFiltering>
+        <EnableKeywordFilteringCaseSensitive>false</EnableKeywordFilteringCaseSensitive>
+        <EnableKeywordFilteringInbound>true</EnableKeywordFilteringInbound>
+        <EnableKeywordFilteringOutbound>true</EnableKeywordFilteringOutbound>
+        <EnableScanningInbound>true</EnableScanningInbound>
+        <EnableScanningInternal>true</EnableScanningInternal>
+        <EnableScanningOutbound>true</EnableScanningOutbound>
+        <EnableSpywareScan>true</EnableSpywareScan>
+        <EnableVirusScan>true</EnableVirusScan>
+        <EnableVirusScanInbound>true</EnableVirusScanInbound>
+        <EnableVirusScanOutbound>true</EnableVirusScanOutbound>
+        <EnableWormPurge>true</EnableWormPurge>
+        <Enabled>true</Enabled>
+        <EngineUsagePolicy>All</EngineUsagePolicy>
+        <FileFilteringDeletionText>Microsoft Forefront Protection for Exchange Server removed a file since it was found to match a filter.
+File name: "%File%"
+Filter name: "%Filter%"</FileFilteringDeletionText>
+        <FileFilteringSkipScanofCompressedFiles>false</FileFilteringSkipScanofCompressedFiles>
+        <IPMReplicationMessages>false</IPMReplicationMessages>
+        <IllegalMIMEHeaderAction>PURGE</IllegalMIMEHeaderAction>
+        <IllegalMIMEHeaderQuarantine>true</IllegalMIMEHeaderQuarantine>
+        <MalwareDeletionText>Microsoft Forefront Protection for Exchange Server removed a file since it was found to be infected.
+File name: "%File%"
+Malware name: "%Malware%"</MalwareDeletionText>
+        <MaxContainerScanTime>120</MaxContainerScanTime>
+        <ProcessCount>4</ProcessCount>
+        <PurgeMessageIfBodyDeleted>false</PurgeMessageIfBodyDeleted>
+        <SenderInformation>MIME</SenderInformation>
+        <SpywareAction>DELETE</SpywareAction>
+        <SpywareQuarantine>true</SpywareQuarantine>
+        <SuppressMalwareNotifications>false</SuppressMalwareNotifications>
+        <TagTextHeader>Junk-Mail</TagTextHeader>
+        <TagTextSubject>SUSPECT:</TagTextSubject>
+        <TimeOutAction>DELETE</TimeOutAction>
+        <Timeout>600</Timeout>
+        <VirusAction>CLEAN</VirusAction>
+        <VirusQuarantine>true</VirusQuarantine>
+        <VirusRescan>false</VirusRescan>
+      </FSETransportScan>
+    </TransportScan>
+  </Fse>
+  <Fss>
+    <FilterList />
+    <TracingOptions>
+      <FSSTracing>
+        <Flags>
+          <ForefrontServerAbstractSettings>Default</ForefrontServerAbstractSettings>
+        </Flags>
+        <FlushFrequency>0</FlushFrequency>
+        <Level>Information</Level>
+        <MaxLogSize>1024</MaxLogSize>
+      </FSSTracing>
+    </TracingOptions>
+  </Fss>
+</FSESettings>

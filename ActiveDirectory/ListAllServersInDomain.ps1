@@ -1,0 +1,2 @@
+﻿Get-QADComputer -SizeLimit 1000000 -SearchRoot "dc=prod,dc=c2s2,dc=l-3com,dc=com" | Where-Object {$_.OSName -match "Server"} |Format-Table -AutoSize -Property name,osname,osversion,osservicepack,computerrole | Out-File servers.txt -append
+					
